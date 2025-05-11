@@ -9,7 +9,7 @@ load_dotenv()
 client = AzureOpenAI(
     api_key=os.getenv("AZURE_OPENAI_API_KEY"),
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
-    api_version="2024-12-01-preview" 
+    api_version=os.getenv("AZURE_OPENAI_API_VERSION") 
 )
 
 deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT")
